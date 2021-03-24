@@ -6,10 +6,13 @@
     --granny-smith-apple: #B5D99C;
     --beige: #F5F7DC;
     --canary: #FFFF82;
+    --baby-powder: #FDFCF5;
+    --imperial-red: #EF233C;
+    --amaranth-red: #D90429;
 
     --background-color: var(--dark-purple);
     --field-color: var(--space-cadet);
-    --text-color: var(--beige);
+    --text-color: var(--baby-powder);
     --accent: var(--fire-opal);
 
     --field-shadow: 
@@ -52,6 +55,26 @@ body {
     margin: 0;
 }
 
+button {
+    outline: none;
+    font-family: 'Roboto Mono';
+    background-color: var(--fire-opal);
+    border: hidden;
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--text-color);
+    transition: 0.2s;
+}
+
+button:hover, button:focus {
+    background-color: var(--imperial-red);
+}
+
+button:active {
+    background-color: var(--beige);
+    color: var(--space-cadet);
+}
+
 div.panel {
     width: 50%;
     height: 98%;
@@ -75,7 +98,7 @@ textarea#editor-field {
     margin: 0.5%;
     resize: none;
     border: hidden;
-    color: var(--beige);
+    color: var(--text-color);
     font-family: 'Roboto Mono';
 }
 
@@ -102,7 +125,7 @@ div#shell {
 }
 
 p.shell-output {
-    color: var(--beige);
+    color: var(--text-color);
     font-family: 'Roboto Mono';
     margin: 0;
 }
