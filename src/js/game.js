@@ -4,8 +4,8 @@ game.ctx = game.game.getContext('2d');
 
 game.size = function() {
     const ctx = game.ctx;
-    ctx.canvas.width = window.innerWidth / 2.5;
-    ctx.canvas.height = window.innerHeight / 2.7;
+    ctx.canvas.width = window.innerWidth / 2.2;
+    ctx.canvas.height = window.innerHeight / 2.5;
 }
 
 game.frame = async function() {
@@ -24,5 +24,3 @@ game.init = function() {
     game.size()
     game.frame()
 }
-
-game.init()

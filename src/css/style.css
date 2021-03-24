@@ -95,3 +95,14 @@ canvas#game-field {
     border-radius: 16px;
     align-self: center;
 }
+
+div#shell {
+    padding-left: 16px;
+    overflow-y: scroll;
+}
+
+p.shell-output {
+    color: var(--beige);
+    font-family: 'Roboto Mono';
+    margin: 0;
+}
