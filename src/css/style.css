@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root {
+    --dark-purple: #272231;
+    --space-cadet: #392F5A;
+    --fire-opal: #E65F5C;
+    --granny-smith-apple: #B5D99C;
+    --beige: #F5F7DC;
+    --canary: #FFFF82;
+
+    --background-color: var(--dark-purple);
+    --field-color: var(--space-cadet);
+    --text-color: var(--beige);
+    --accent: var(--fire-opal);
+
+    --field-shadow: 
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff00;
+    height: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ababab;
+    border: hidden;
+    border-radius: 10px;
+    max-height: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+    max-height: 50px;
+  }
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+div.panel {
+    width: 50%;
+    height: 98%;
+    padding: 8px;
+}
+
+div.field {
+    height: 48%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: var(--field-color);
+    border: hidden;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 4px #121212);
+}
+
+textarea#editor-field {
+    background-color: var(--field-color);
+    width: 98%;
+    height: 98%;
+    margin: 0.5%;
+    resize: none;
+    border: hidden;
+    color: var(--beige);
+    font-family: 'Roboto Mono';
+}
+
+textarea#editor-field:focus {
+    outline: none;
+}
+
+div#game {
+    text-align: center;
+    justify-content: center;
+}
+
+canvas#game-field {
+    margin-top: 32px;
+    background-color: var(--beige);
+    border: hidden;
+    border-radius: 16px;
+    align-self: center;
+}
