@@ -6,8 +6,8 @@ processor.config = {
 
 
 // Function to format the text area in somthing predictable that we can use
-processor.format = function(string) {
-    const lines = string.split(/\r?\n/);
+processor.format = function(str) {
+    const lines = str.toLowerCase().toLowerCase().split(/\r?\n/);
     let problems = 0;
     let formatted = [];
     for (let i = 0; i < lines.length; i++) {
@@ -18,15 +18,17 @@ processor.format = function(string) {
         task.value = args [1]
         formatted.push(task)
     }
+    shell.log(problems)
     return formatted
 }
 
 processor.debug = function(field) {
     let problems = 0;
 
-    const lines = processor.format(field)
+    const text = document.querySelector(field)
+    const lines = processor.format(text)
 
-    console.log(lines)
+    shell.log(lines)
 
     return problems
 }
